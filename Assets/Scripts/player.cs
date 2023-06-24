@@ -35,7 +35,7 @@ public class player : MonoBehaviour
     }
     void PlayerWalk(){
         movementX = Input.GetAxisRaw("Horizontal");
-        transform.position += new Vector3(movementX , 0f , 0f) *Time.deltaTime * moveForce ;
+        transform.position += new Vector3(movementX , 0f , 0f) *Time.deltaTime * moveForce ;//it was better here to use velocity
     }
     void AnimatePlayer(){
         if(movementX>0){
